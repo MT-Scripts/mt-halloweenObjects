@@ -3,6 +3,11 @@ Simple halloween objects placer
 
 [Preview](https://youtu.be/PJKik3XO0cc)
 
+# Features
+- Shop with more than 30 halloween items already seted up
+- Use items and place objects wherever you want
+- Objects stay where they've been placed (SQL save)
+
 # Dependicies
 - ox_lib
 - ox_target or qb-target
