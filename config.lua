@@ -1,0 +1,81 @@
+Config = Config or {}
+
+Config.Core = 'qbx-core' -- Your core resource folder name
+Config.Inventory = 'ox_inventory' -- Your inventory resource folder name
+Config.RenewedLib = 'Renewed-Lib' -- Your renewed lib resource name
+Config.Target = 'ox_target' -- Your target resource name
+
+Config.shops = {
+    { coords = vec4(-605.29, -802.98, 24.15, 92.10), showBlip = true, label = 'Halloween Shop', sprite = 118, scale = 0.6, display = 4, color = 27, model = 'ig_djtalaurelia', scenario = 'WORLD_HUMAN_STAND_IMPATIENT' },
+}
+
+Config.shopItems = {
+    { name = 'halloween_blackspider', price = 300 },
+    { name = 'halloween_cauldronbig', price = 300 },
+    { name = 'halloween_cauldronsmall', price = 300 },
+    { name = 'halloween_cuteghost', price = 300 },
+    { name = 'halloween_deathghost', price = 300 },
+    { name = 'halloween_jackolantern', price = 300 },
+    { name = 'halloween_medichandelier', price = 300 },
+    { name = 'halloween_pumpkinreal', price = 300 },
+    { name = 'halloween_scarycape1', price = 300 },
+    { name = 'halloween_scarycape2', price = 300 },
+    { name = 'halloween_stonecross', price = 300 },
+    { name = 'halloween_4tombstones', price = 300 },
+    { name = 'halloween_grave1', price = 300 },
+    { name = 'halloween_grave2', price = 300 },
+    { name = 'halloween_grave3', price = 300 },
+    { name = 'halloween_grave4', price = 300 },
+    { name = 'halloween_grave5', price = 300 },
+    { name = 'halloween_grave6', price = 300 },
+    { name = 'halloween_grave7', price = 300 },
+    { name = 'halloween_grave8', price = 300 },
+    { name = 'halloween_grave9', price = 300 },
+    { name = 'halloween_grave10', price = 300 },
+    { name = 'halloween_grave11', price = 300 },
+    { name = 'halloween_grave12', price = 300 },
+    { name = 'halloween_grave13', price = 300 },
+    { name = 'halloween_grave14', price = 300 },
+    { name = 'halloween_grave15', price = 300 },
+    { name = 'halloween_grave16', price = 300 },
+    { name = 'halloween_grave17', price = 300 },
+    { name = 'halloween_grave18', price = 300 },
+    { name = 'halloween_grave10', price = 300 },
+    { name = 'halloween_grave20', price = 300 },
+}
+
+Config.props = {
+    { item = 'halloween_blackspider', prop = 'blackspider' },
+    { item = 'halloween_cauldronbig', prop = 'cauldronbig' },
+    { item = 'halloween_cauldronsmall', prop = 'cauldronsmall' },
+    { item = 'halloween_cuteghost', prop = 'cuteghost' },    
+    { item = 'halloween_deathghost', prop = 'deathghost' },
+    { item = 'halloween_jackolantern', prop = 'jackolantern' },
+    { item = 'halloween_medichandelier', prop = 'medichandelier' },
+    { item = 'halloween_medievalcoffin', prop = 'medievalcoffin' },
+    { item = 'halloween_pumpkinreal', prop = 'pumpkinreal' },
+    { item = 'halloween_scarycape1', prop = 'scarycape1' },
+    { item = 'halloween_scarycape2', prop = 'scarycape2' },
+    { item = 'halloween_stonecross', prop = 'stonecross' },
+    { item = 'halloween_4tombstones', prop = '4tombstones' },
+    { item = 'halloween_grave1', prop = 'grave1' },
+    { item = 'halloween_grave2', prop = 'grave2' },
+    { item = 'halloween_grave3', prop = 'grave3' },
+    { item = 'halloween_grave4', prop = 'grave4' },
+    { item = 'halloween_grave5', prop = 'grave5' },
+    { item = 'halloween_grave6', prop = 'grave6' },
+    { item = 'halloween_grave7', prop = 'grave7' },
+    { item = 'halloween_grave8', prop = 'grave8' },
+    { item = 'halloween_grave9', prop = 'grave9' },
+    { item = 'halloween_grave10', prop = 'grave10' },
+    { item = 'halloween_grave11', prop = 'grave11' },
+    { item = 'halloween_grave12', prop = 'grave12' },
+    { item = 'halloween_grave13', prop = 'grave13' },
+    { item = 'halloween_grave14', prop = 'grave14' },
+    { item = 'halloween_grave15', prop = 'grave15' },
+    { item = 'halloween_grave16', prop = 'grave16' },
+    { item = 'halloween_grave17', prop = 'grave17' },
+    { item = 'halloween_grave18', prop = 'grave18' },
+    { item = 'halloween_grave19', prop = 'grave19' },
+    { item = 'halloween_grave20', prop = 'grave20' },
+}

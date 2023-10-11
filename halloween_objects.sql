@@ -1,0 +1,7 @@
+CREATE TABLE `halloween_objects` (
+	`ID` INT(10) NOT NULL AUTO_INCREMENT,
+	`coords` LONGTEXT,
+	`object` LONGTEXT,
+	PRIMARY KEY (`ID`) USING BTREE,
+	UNIQUE INDEX `ID` (`ID`) USING BTREE
+);

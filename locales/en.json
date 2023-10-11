@@ -1,0 +1,13 @@
+{
+    "open_shop": "See things",
+    "place_tUI": "[ARROW UP] Coord X up",
+    "place_tUI2": "[ARROW DOWN] - Coord X down",
+    "place_tUI3": "[ARROW LEFT] - Coord Y up",
+    "place_tUI4": "[ARROW RIGHT] - Coord Y down",
+    "place_tUI5": "[ALT + SCROLL UP] - Coor Z up",
+    "place_tUI6": "[ALT + SCROLL DOWN] - Coor Z down",
+    "place_tUI7": "[SCROLL] - Rotation",
+    "place_tUI8": "[Y] - Confirm placement location",
+    "place_tUI9": "[X] - Cancel placement",
+    "pick_object": "Pick Object"
+}
