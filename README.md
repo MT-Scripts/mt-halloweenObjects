@@ -6,7 +6,8 @@ Simple halloween objects placer
 # Features
 - Shop with more than 30 halloween items already seted up
 - Use items and place objects wherever you want
-- Objects stay where they've been placed (SQL save)
+- Objects stay where they've been placed even afeter RR (SQL save)
+- Synced with all server players
 
 # Dependicies
 - ox_lib
