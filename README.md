@@ -1,4 +1,4 @@
-# mt-halloweenObjectcs
+# mt-halloweenObjects
 Simple halloween objects placer
 
 [Preview](https://youtu.be/PJKik3XO0cc)
