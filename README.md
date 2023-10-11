@@ -1,7 +1,7 @@
 # mt-halloweenObjectcs
 Simple halloween objects placer
 
-[Preview]()
+[Preview](https://youtu.be/PJKik3XO0cc)
 
 # Dependicies
 - ox_lib
