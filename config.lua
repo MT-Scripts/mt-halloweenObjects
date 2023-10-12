@@ -1,9 +1,8 @@
 Config = Config or {}
 
-Config.Core = 'qbx-core' -- Your core resource folder name
-Config.Inventory = 'ox_inventory' -- Your inventory resource folder name
-Config.RenewedLib = 'Renewed-Lib' -- Your renewed lib resource name
-Config.Target = 'ox_target' -- Your target resource name
+Config.Core = 'qb' -- qb or esx
+Config.Inventory = 'ox_inventory' -- Your inventory resource folder name ox_inventory, qb-inventory, ...
+Config.Target = 'ox_target' -- Your target resource name ox_target, qb-target, ...
 
 Config.shops = {
     { coords = vec4(-605.29, -802.98, 24.15, 92.10), showBlip = true, label = 'Halloween Shop', sprite = 118, scale = 0.6, display = 4, color = 27, model = 'ig_djtalaurelia', scenario = 'WORLD_HUMAN_STAND_IMPATIENT' },

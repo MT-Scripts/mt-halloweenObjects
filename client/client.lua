@@ -1,33 +1,39 @@
-local Renewed = exports[Config.RenewedLib]:getLib()
-local Core = exports[Config.Core]:GetCoreObject()
 lib.locale()
 local blip = {}
 local objects = {}
+local peds = {}
 
 CreateThread(function()
     for k, v in pairs(Config.shops) do
-        Renewed.addPed({ 
-            model = v.model,
-            dist = 20,
-            coords = vec3(v.coords.x, v.coords.y, v.coords.z),
-            heading = v.coords.w,
-            scenario = v.scenario,
-            freeze = true,
-            invincible = true,
-            tempevents = true,
-            id = 'halloween_shop_'..k,
-            target = {
-                {
-                    name = 'halloween_shop_'..k,
-                    icon = 'fas fa-spider',
-                    label = locale('open_shop'),
-                    distance = 2.5,
-                    onSelect = function()
-                        openShop()
-                    end
-                },
-            }
-        })
+        lib.requestModel(v.model)
+        peds[k] =  CreatePed(4, GetHashKey(v.model), v.coords.x, v.coords.y, v.coords.z, v.coords.w, false, true)
+        SetEntityHeading(peds[k], v.coords.w)
+        FreezeEntityPosition(peds[k], true)
+        SetEntityInvincible(peds[k], true)
+        SetBlockingOfNonTemporaryEvents(peds[k], true)
+        TaskStartScenarioInPlace(peds[k], v.scenario, 0, true)
+
+        local options = {
+            {
+                name = 'halloween_shop_'..k,
+                icon = 'fas fa-spider',
+                label = locale('open_shop'),
+                distance = 2.5,
+                onSelect = function()
+                    openShop()
+                end,
+                action = function()
+                    openShop()
+                end
+            },
+        }
+
+        if Config.Target == 'ox_target' then
+            exports.ox_target:addLocalEntity(peds[k], options)
+        else
+            exports[Config.Target]:AddTargetEntity(peds[k], { distance = 2.5, options = options })
+        end
+
         if v.showBlip then
             blip[k] = AddBlipForCoord(v.coords.x, v.coords.y, v.coords.x)
             SetBlipSprite(blip[k], v.sprite)

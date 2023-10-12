@@ -1,5 +1,5 @@
 # mt-halloweenObjects
-Simple halloween objects placer
+Simple halloween objects placer for QBCore and ESX
 
 [Preview](https://youtu.be/PJKik3XO0cc)
 
@@ -12,9 +12,8 @@ Simple halloween objects placer
 # Dependicies
 - ox_lib
 - ox_target or qb-target
-- qbx-core or qb-core
+- qbx-core or qb-core or es_extended (esx)
 - qb-inventory or ox_inventory
-- Renewed-lib
 - [Halloween Props](https://forum.cfx.re/t/free-props-halloween-props/4771327)
 
 # Credits
