@@ -1,6 +1,7 @@
 Config = Config or {}
 
 Config.Core = 'qb' -- qb or esx
+Config.CoreName = 'qbx-core' -- Your core resource name qbx-core, qb-core, es_extended
 Config.Inventory = 'ox_inventory' -- Your inventory resource folder name ox_inventory, qb-inventory, ...
 Config.Target = 'ox_target' -- Your target resource name ox_target, qb-target, ...
 
