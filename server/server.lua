@@ -1,7 +1,7 @@
 if Config.Core == 'qb' then
-    local Core = exports[Config.CoreName]:GetCoreObject()
+    Core = exports[Config.CoreName]:GetCoreObject()
 else
-    local ESX = exports[Config.CoreName]:getSharedObject()
+    ESX = exports[Config.CoreName]:getSharedObject()
 end
 
 RegisterNetEvent('mt-halloweenObjectcs:server:registerShop', function(name, items)
