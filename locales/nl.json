@@ -1,0 +1,13 @@
+{
+    "open_shop": "Dingen zien",
+    "place_tUI": "[ARROW UP] Coord X omhoog",
+    "place_tUI2": "[ARROW DOWN] - Coord X omlaag",
+    "place_tUI3": "[ARROW LEFT] - Coord Y omhoog",
+    "place_tUI4": "[ARROW RIGHT] - Coord Y omlaag",
+    "place_tUI5": "[ALT + SCROLL UP] - Coor Z omhoog",
+    "place_tUI6": "[ALT + SCROLL DOWN] - Coor Z omlaag",
+    "place_tUI7": "[SCROLL] - Rotation",
+    "place_tUI8": "[Y] - Bevestig de plaats",
+    "place_tUI9": "[X] - annuleer de plaats",
+    "pick_object": "Neem object"
+}

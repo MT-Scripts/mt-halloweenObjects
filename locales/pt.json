@@ -1,0 +1,13 @@
+{
+    "open_shop": "Ver Merdas",
+    "place_tUI": "[ARROW UP] Coord X para cima",
+    "place_tUI2": "[ARROW DOWN] - Coord X para baixo",
+    "place_tUI3": "[ARROW LEFT] - Coord Y para cima",
+    "place_tUI4": "[ARROW RIGHT] - Coord Y para baixo",
+    "place_tUI5": "[ALT + SCROLL UP] - Coor Z para cima",
+    "place_tUI6": "[ALT + SCROLL DOWN] - Coor Z para baixo",
+    "place_tUI7": "[SCROLL] - Rotação",
+    "place_tUI8": "[Y] - Confirmar",
+    "place_tUI9": "[X] - Cancelar",
+    "pick_object": "Apanhar objeto"
+}
