@@ -59,6 +59,6 @@ RegisterNetEvent('mt-halloweenObjectcs:server:deleteObject', function(id, item)
         Player.Functions.AddItem(item, 1)
     else
         local Player = ESX.GetPlayerFromId(src)
-        Player.removeInventoryItem(item, 1)
+        Player.addInventoryItem(item, 1)
     end
 end)
