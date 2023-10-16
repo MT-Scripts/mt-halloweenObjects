@@ -3,9 +3,14 @@ local blip = {}
 local objects = {}
 local peds = {}
 
+function loadModel(model)
+    RequestModel(GetHashKey(model))
+    while not HasModelLoaded(GetHashKey(model)) do Wait(100) end
+end
+
 CreateThread(function()
     for k, v in pairs(Config.shops) do
-        lib.requestModel(v.model)
+        loadModel(v.model)
         peds[k] =  CreatePed(4, GetHashKey(v.model), v.coords.x, v.coords.y, v.coords.z, v.coords.w, false, true)
         SetEntityHeading(peds[k], v.coords.w)
         FreezeEntityPosition(peds[k], true)
@@ -64,7 +69,7 @@ function placeAllObjects()
                 local cd = json.decode(v.coords)
                 local object = json.decode(v.object)
                 local coords = vec4(cd.x, cd.y, cd.z, cd.w)
-                lib.requestModel(tostring(object.prop), 100)
+                loadModel(tostring(object.prop))
                 local prop = CreateObject(GetHashKey(tostring(object.prop)), vec3(coords.x, coords.y, coords.z), false, false)
                 FreezeEntityPosition(prop, true)
                 SetEntityHeading(prop, coords.w)
@@ -110,7 +115,7 @@ function openShop()
 end
 
 RegisterNetEvent('mt-halloweenObjectcs:client:useHalloweenObject', function(item, prop)
-    lib.requestModel(GetHashKey(prop), 100)
+    loadModel(prop)
     local ped = PlayerPedId()
     local pedCoords = GetEntityCoords(ped)
     local coords = vec4(pedCoords.x+0.5, pedCoords.y+0.5, pedCoords.z-1.0, 0)
